@@ -12,7 +12,7 @@ services:
       - /var/lib/mysql
       - ./bug_report.sql:/docker-entrypoint-initdb.d/init.sql
   web:
-    image: tunght99/bug_report
+    image: bug_report
     ports:
       - "8080:8080"
     depends_on:
