@@ -18,7 +18,7 @@ $ docker build -t bug_report .
 ```
 $ docker-compose up -d
 ```
-3. Wait 10 minutes or more. And go localhost:8080
+3. Wait 10 minutes or more. And go http://localhost:8080
 #
 - Admin account:
   - admin@gmail.com
