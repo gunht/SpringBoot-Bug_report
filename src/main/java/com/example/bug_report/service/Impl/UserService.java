@@ -6,10 +6,12 @@ import com.example.bug_report.exception.DuplicateRecordException;
 import com.example.bug_report.model.mapper.UserMapper;
 import com.example.bug_report.model.request.CreateUserReq;
 import com.example.bug_report.repository.IUserRepository;
+import com.example.bug_report.service.IRoleService;
 import com.example.bug_report.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 

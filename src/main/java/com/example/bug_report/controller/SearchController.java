@@ -4,6 +4,7 @@ import com.example.bug_report.entity.Post;
 import com.example.bug_report.model.request.SearchReq;
 import com.example.bug_report.service.IPostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

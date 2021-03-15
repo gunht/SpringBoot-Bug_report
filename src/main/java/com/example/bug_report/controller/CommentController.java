@@ -3,6 +3,7 @@ package com.example.bug_report.controller;
 import com.example.bug_report.entity.Post;
 import com.example.bug_report.entity.User;
 import com.example.bug_report.model.request.CreateCommentReq;
+import com.example.bug_report.repository.ICommentRepository;
 import com.example.bug_report.security.CustomUserDetails;
 import com.example.bug_report.service.ICommentService;
 import com.example.bug_report.service.IPostService;

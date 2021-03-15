@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Objects;
 
 @Controller
@@ -136,15 +137,9 @@ public class PostController {
         if (!Objects.equals(imageNameReq.getOriginalFilename(), "")) {
             String name = StringUtils.cleanPath(Objects.requireNonNull(imageNameReq.getOriginalFilename()));
             switch (count) {
-                case 1:
-                    req.setImage1(name);
-                    break;
-                case 2:
-                    req.setImage2(name);
-                    break;
-                case 3:
-                    req.setImage3(name);
-                    break;
+                case 1 -> req.setImage1(name);
+                case 2 -> req.setImage2(name);
+                case 3 -> req.setImage3(name);
             }
             return name;
         }

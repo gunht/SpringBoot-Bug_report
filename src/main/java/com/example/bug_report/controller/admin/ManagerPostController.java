@@ -9,6 +9,7 @@ import com.example.bug_report.utils.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -96,13 +97,9 @@ public class ManagerPostController {
         if (!Objects.equals(imageNameReq.getOriginalFilename(), "")) {
             String name = StringUtils.cleanPath(Objects.requireNonNull(imageNameReq.getOriginalFilename()));
             switch (count) {
-                case 1:
-                    req.setImage1(name);
-                    break;
-                case 2:
-                    req.setImage2(name);
-                    break;
-                case 3: req.setImage3(name);
+                case 1 -> req.setImage1(name);
+                case 2 -> req.setImage2(name);
+                case 3 -> req.setImage3(name);
             }
             return name;
         }

@@ -3,10 +3,13 @@ package com.example.bug_report.model.mapper;
 import com.example.bug_report.entity.Role;
 import com.example.bug_report.entity.User;
 import com.example.bug_report.model.request.CreateUserReq;
+import com.example.bug_report.service.IRoleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
